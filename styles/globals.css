@@ -50,12 +50,12 @@
       hsla(215, 98%, 61%, 1) 0px,
       transparent 0%
     ),
-    radial-gradient(at 97% 21%, hsla(125, 98%, 72%, 1) 0px, transparent 50%),
-    radial-gradient(at 52% 99%, hsla(354, 98%, 61%, 1) 0px, transparent 50%),
-    radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%),
-    radial-gradient(at 97% 96%, hsla(38, 60%, 74%, 1) 0px, transparent 50%),
-    radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%),
-    radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%);
+    radial-gradient(at 97% 21%, rgb(19, 207, 35) 0px, transparent 50%),
+    radial-gradient(at 52% 99%, rgb(179, 18, 34) 0px, transparent 50%),
+    radial-gradient(at 10% 29%, rgb(61, 16, 187) 0px, transparent 50%),
+    radial-gradient(at 97% 96%, rgb(243, 175, 56) 0px, transparent 50%),
+    radial-gradient(at 33% 50%, rgb(41, 91, 206) 0px, transparent 50%),
+    radial-gradient(at 79% 53%, rgb(177, 29, 71) 0px, transparent 50%);
   position: absolute;
   content: "";
   width: 100%;
@@ -86,11 +86,11 @@
 }
 
 .head_text {
-  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
+  @apply mt-5 text-5xl font-extrabold leading-[1.2] text-black sm:text-6xl;
 }
 
-.orange_gradient {
-  @apply bg-gradient-to-r from-amber-500 via-orange-400 to-yellow-500 bg-clip-text text-transparent;
+.blue_gradient {
+  @apply bg-gradient-to-r from-blue-500 via-blue-400 to-blue-800 bg-clip-text text-transparent;
 }
 
 .green_gradient {
@@ -114,7 +114,7 @@
 }
 
 .glassmorphism {
-  @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-5;
+  @apply rounded-xl border border-gray-300 bg-white/80 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-5;
 }
 
 .prompt_layout {
@@ -150,7 +150,7 @@
 
 /* PromptCard Component */
 .prompt_card {
-  @apply flex-1 break-inside-avoid rounded-lg border border-gray-300 bg-white/20 bg-clip-padding p-6 pb-4 backdrop-blur-lg backdrop-filter md:w-[360px] w-full h-fit;
+  @apply flex-1 break-inside-avoid rounded-lg border border-gray-300 bg-white/50 bg-clip-padding p-6 pb-4 backdrop-blur-lg backdrop-filter md:w-[360px] w-full h-fit;
 }
 
 .flex-center {

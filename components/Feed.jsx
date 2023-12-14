@@ -24,7 +24,7 @@ const Feed = () => {
 
   const handleSearchChange = (event) => {
     setSearchText(event.target.value);
-    const val = event.target.value.toString().split("#").join("").trim();
+    const val = event.target.value.toString().trim();
 
     if (!val) {
       setPostsCopy(posts);
@@ -39,7 +39,9 @@ const Feed = () => {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const response = await fetch("/api/prompt");
+      const response = await fetch("/api/prompt", {
+        cache: "no-cache",
+      });
       const data = await response.json();
 
       setPosts(data);
